@@ -35,7 +35,7 @@ namespace ProjetoConsole.Models
             return base.ToString() + $", Matrícula: {Matricula}";
         }
 
-        public void Apresentação()
+        public override void Apresentar()
         {
             Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos e minha matrícula é {Matricula}.");
         }

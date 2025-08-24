@@ -51,10 +51,10 @@ Console.WriteLine("\n");
 Console.WriteLine("\n");
 Console.WriteLine("\n");
 
-p1.Apresentação();
-a1.Apresentação();
+p1.Apresentar();
+a1.Apresentar();
 
 Professor prof1 = new Professor("Ana", 40, "Matemática");
 
 Console.WriteLine("\n");
-prof1.Apresentação();
+prof1.Apresentar();

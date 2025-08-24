@@ -30,9 +30,9 @@ namespace ProjetoConsole.Models
         {
             return base.ToString() + $", Especialidade: {Especialidade}";
         }
-        public void Apresentação()
+        public override void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome}, sou Professor e tenho {Idade} anos e minha especialidade é {Especialidade}.");
+           Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos e minha especialidade é {Especialidade}.");
         }
   
     
