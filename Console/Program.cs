@@ -1,22 +1,82 @@
 ﻿using ProjetoConsole.Models;
-using System.ComponentModel;
-using System.Globalization;
+
+ new ExemploExeception().Metodo1();
 
 
 
 
-string data = "2005-18-18 23:00";
 
-bool sucesso = DateTime.TryParseExact(data, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataSaida);
 
-if (!sucesso)
-{
-    Console.WriteLine($"{dataSaida} Data em formato inválido");
-}
-else
-{
-    Console.WriteLine("Sucesso!!!\n"+dataSaida);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//using System;
+//using System.IO;
+
+//try
+//{
+//    string basePath = AppDomain.CurrentDomain.BaseDirectory;
+//    string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+//    string filePath = Path.Combine(projectPath, "Arquivos", "arquivo.txt");
+//    Console.WriteLine($"Caminho utilizado : {filePath}");
+
+//    string[] linhas = File.ReadAllLines(filePath);
+//    foreach (string linha in linhas)
+//    {
+//        Console.WriteLine(linha);
+//    }
+
+//    int divisor = 10;
+//    int dividendo = 0;
+//    int resultado = divisor / dividendo;
+//    Console.WriteLine($"Resultado da divisão: {resultado}");
+//    Console.WriteLine("Arquivo lido com sucesso!");
+//}
+//catch (FileNotFoundException e) { Console.WriteLine($"Arquivo não encontrado: {e.Message}"); }
+//catch (DirectoryNotFoundException e) { Console.WriteLine($"Diretório não encontrado: {e.Message}"); }
+//catch (Exception ex) { Console.WriteLine($"Ocorreu um erro genérico: {ex.Message}"); }
+
+//finally { Console.WriteLine("Finalizando Conexão\nEncerrando Programa..."); }
+
+
+
+
+
+
+
+
+
+//string data = "2005-18-18 23:00";
+
+//bool sucesso = DateTime.TryParseExact(data, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataSaida);
+
+//if (!sucesso)
+//{
+//    Console.WriteLine($"{dataSaida} Data em formato inválido");
+//}
+//else
+//{
+//    Console.WriteLine("Sucesso!!!\n"+dataSaida);
+//}
 
 
 
