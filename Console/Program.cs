@@ -5,14 +5,28 @@ using System;
 using System.IO;
 
 
+//Console.WriteLine("Digite um número: ");
+//int number = int.Parse(Console.ReadLine());
+
+//if (number % 2 == 0)
+//{
+//    Console.WriteLine($"O número que você digitou e par");
+//}
+//else
+//{
+//    Console.WriteLine("O número que você digitou e ímpar");
+//}
+
+//bool ePar = false;
+
+//ePar = number % 2 == 0;
+//Console.WriteLine($"O número que você digitou: {number} é "+ (ePar ? "par" : "impar "));
+
 
 //Pessoa p1 = new Pessoa("Deyvisson", 20);
 
 //(string nome, int idade) = p1;
 //Console.WriteLine($"{nome} {idade}");
-
-
-
 
 
 
