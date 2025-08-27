@@ -7,11 +7,13 @@ using Newtonsoft.Json;
 
 
 Venda venda = new Venda(1,"Mesa",450.35M);
+string basePath = AppDomain.CurrentDomain.BaseDirectory;
+string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+string filePath = Path.Combine(projectPath, "Arquivos");
 
-
-string serializado = JsonConvert.SerializeObject(venda, Formatting.Indent ed);
-
+string serializado = JsonConvert.SerializeObject(venda, Formatting.Indented);
 Console.WriteLine(serializado);
+File.WriteAllText($"{filePath}/vendas.json", serializado);
 
 
 //Console.WriteLine("Digite um número: ");
