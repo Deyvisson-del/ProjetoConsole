@@ -1,7 +1,18 @@
 ﻿using ProjetoConsole.Models;
+using System.Collections.Generic;
+using System.Globalization;
+using System;
 
- new ExemploExeception().Metodo1();
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
 
+
+foreach (var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
 
 
 
