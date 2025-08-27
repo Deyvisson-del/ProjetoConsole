@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using System.Globalization;
 using System;
 using System.IO;
+using Newtonsoft.Json;
+
+
+Venda venda = new Venda(1,"Mesa",450.35M);
+
+
+string serializado = JsonConvert.SerializeObject(venda, Formatting.Indent ed);
+
+Console.WriteLine(serializado);
 
 
 //Console.WriteLine("Digite um número: ");
