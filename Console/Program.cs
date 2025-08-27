@@ -4,20 +4,24 @@ using System.Globalization;
 using System;
 using System.IO;
 using Newtonsoft.Json;
+using Microsoft.VisualBasic;
+
+
+DateTime DataAtual = DateTime.Now;
 
 List<Venda> listaVendas = new List<Venda>();
 
-Venda venda = new Venda(01,"Mesa",450.35M);
-Venda venda1 = new Venda(02, "Caneta", 1.50M);
-Venda venda2 = new Venda(03, "Carderno", 20.00M);
-Venda venda3 = new Venda(04, "Lápis", 1.00M);
-Venda venda4 = new Venda(5, "Lápis Grafite", 1.00M);
-Venda venda5 = new Venda(06, "Lapiseira", 1.00M);
-Venda venda6 = new Venda(07, "Estojo", 20.00M);
-Venda venda7 = new Venda(08, "CX Lápis de Cor", 15.00M);
-Venda venda8 = new Venda(09, "CX Lápis de cera", 12.00M);
-Venda venda9 = new Venda(10, "Borracha", 0.20M);
-Venda venda10 = new Venda(11, "Bloco de Notas", 10.00M);
+Venda venda = new Venda(01,"Mesa",450.35M, DataAtual);
+Venda venda1 = new Venda(02, "Caneta", 1.50M, DataAtual);
+Venda venda2 = new Venda(03, "Carderno", 20.00M, DataAtual);
+Venda venda3 = new Venda(04, "Lápis", 1.00M, DataAtual);
+Venda venda4 = new Venda(5, "Lápis Grafite", 1.00M, DataAtual);
+Venda venda5 = new Venda(06, "Lapiseira", 1.00M, DataAtual);
+Venda venda6 = new Venda(07, "Estojo", 20.00M, DataAtual);
+Venda venda7 = new Venda(08, "CX Lápis de Cor", 15.00M, DataAtual);
+Venda venda8 = new Venda(09, "CX Lápis de cera", 12.00M, DataAtual);
+Venda venda9 = new Venda(10, "Borracha", 0.20M, DataAtual);
+Venda venda10 = new Venda(11, "Bloco de Notas", 10.00M, DataAtual);
 
 listaVendas.Add(venda);
 listaVendas.Add(venda1);

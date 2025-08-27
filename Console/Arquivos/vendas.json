@@ -2,56 +2,67 @@
   {
     "Id": 1,
     "Produto": "Mesa",
-    "Preco": 450.35
+    "Preco": 450.35,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 2,
     "Produto": "Caneta",
-    "Preco": 1.50
+    "Preco": 1.50,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 3,
     "Produto": "Carderno",
-    "Preco": 20.00
+    "Preco": 20.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 4,
     "Produto": "Lápis",
-    "Preco": 1.00
+    "Preco": 1.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 5,
     "Produto": "Lápis Grafite",
-    "Preco": 1.00
+    "Preco": 1.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 6,
     "Produto": "Lapiseira",
-    "Preco": 1.00
+    "Preco": 1.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 7,
     "Produto": "Estojo",
-    "Preco": 20.00
+    "Preco": 20.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 8,
     "Produto": "CX Lápis de Cor",
-    "Preco": 15.00
+    "Preco": 15.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 9,
     "Produto": "CX Lápis de cera",
-    "Preco": 12.00
+    "Preco": 12.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 10,
     "Produto": "Borracha",
-    "Preco": 0.20
+    "Preco": 0.20,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   },
   {
     "Id": 11,
     "Produto": "Bloco de Notas",
-    "Preco": 10.00
+    "Preco": 10.00,
+    "DataVenda": "2025-08-27T20:46:29.8129195-03:00"
   }
 ]
