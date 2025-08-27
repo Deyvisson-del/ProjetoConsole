@@ -8,17 +8,17 @@ namespace ProjetoConsole.Models
 {
     public class ExemploExeception
     {
-        public (bool Sucesso, string[] linhas, int QuantidadeLinhas) LerArquivos(string caminho)
+        public (bool Sucesso, string[] Linhas, int QuantidadeLinhas) LerArquivos(string caminho)
         {
             try
             {
-                string[] linhas = System.IO.File.ReadAllLines(caminho);
+                string[] Linhas = System.IO.File.ReadAllLines(caminho);
 
-                foreach (string linha in linhas)
+                foreach (string linha in Linhas)
                 {
                     Console.WriteLine(linha);
                 }
-                return (true, linhas, linhas.Count());
+                return (true, Linhas, Linhas.Count());
             }
             catch (Exception ex)
             {

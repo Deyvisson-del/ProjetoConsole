@@ -10,12 +10,24 @@ ExemploExeception exemplo = new ExemploExeception();
 
 string basePath = AppDomain.CurrentDomain.BaseDirectory;
 string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
-string filePath = Path.Combine(projectPath, "Arquivos", "arquivo1.txt");
+string filePath = Path.Combine(projectPath, "Arquivos", "arquivo.txt");
 
 exemplo.LerArquivos(filePath);
 
+var (Sucesso, linhas, QuantidadeLinhas) = exemplo.LerArquivos(filePath);
 
-
+if (Sucesso)
+{
+    Console.WriteLine("\nlinhas do arquivo: " + QuantidadeLinhas);
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("\nA leitura falhou !!!");
+}
 
 //(int, string, string, decimal) tupla = (0, "nome-genérico", "sobrenome-genérico", 10.5M);
 
