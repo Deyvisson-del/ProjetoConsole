@@ -5,13 +5,21 @@ using System;
 using System.IO;
 using Newtonsoft.Json;
 
+List<Venda> listaVendas = new List<Venda>();
 
 Venda venda = new Venda(1,"Mesa",450.35M);
+Venda venda1 = new Venda(2, "Caneta", 1.50M);
+Venda venda2 = new Venda(3, "Carderno", 20.00M);
+
+listaVendas.Add(venda);
+listaVendas.Add(venda1);
+listaVendas.Add(venda2);
+
 string basePath = AppDomain.CurrentDomain.BaseDirectory;
 string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
 string filePath = Path.Combine(projectPath, "Arquivos");
 
-string serializado = JsonConvert.SerializeObject(venda, Formatting.Indented);
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 Console.WriteLine(serializado);
 File.WriteAllText($"{filePath}/vendas.json", serializado);
 
