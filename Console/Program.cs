@@ -2,39 +2,39 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System;
-
-Dictionary<string, string> estados = new Dictionary<string, string>();
-estados.Add("SP", "São Paulo");
-estados.Add("RJ", "Rio de Janeiro");
-estados.Add("MG", "Minas Gerais");
+using System.IO;
 
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
 
+ExemploExeception exemplo = new ExemploExeception();
 
+string basePath = AppDomain.CurrentDomain.BaseDirectory;
+string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+string filePath = Path.Combine(projectPath, "Arquivos", "arquivo1.txt");
+
+exemplo.LerArquivos(filePath);
 
 
 
 
+//(int, string, string, decimal) tupla = (0, "nome-genérico", "sobrenome-genérico", 10.5M);
 
 
 
+//Console.WriteLine($"ID:{tupla.Item1} \nNome:{tupla.Item2} \nSobrenome:{tupla.Item3} \nKM: {tupla.Item4}");
 
 
 
+//Dictionary<string, string> estados = new Dictionary<string, string>();
+//estados.Add("SP", "São Paulo");
+//estados.Add("RJ", "Rio de Janeiro");
+//estados.Add("MG", "Minas Gerais");
 
 
-
-
-
-
-
-
-
-
+//foreach (var item in estados)
+//{
+//    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+//}       
 
 
 
