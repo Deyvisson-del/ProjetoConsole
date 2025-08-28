@@ -7,43 +7,69 @@ using Newtonsoft.Json;
 using Microsoft.VisualBasic;
 
 
-DateTime DataAtual = DateTime.Now;
-
-List<Venda> listaVendas = new List<Venda>();
-
-Venda venda = new Venda(01,"Mesa",450.35M, DataAtual);
-Venda venda1 = new Venda(02, "Caneta", 1.50M, DataAtual);
-Venda venda2 = new Venda(03, "Carderno", 20.00M, DataAtual);
-Venda venda3 = new Venda(04, "Lápis", 1.00M, DataAtual);
-Venda venda4 = new Venda(5, "Lápis Grafite", 1.00M, DataAtual);
-Venda venda5 = new Venda(06, "Lapiseira", 1.00M, DataAtual);
-Venda venda6 = new Venda(07, "Estojo", 20.00M, DataAtual);
-Venda venda7 = new Venda(08, "CX Lápis de Cor", 15.00M, DataAtual);
-Venda venda8 = new Venda(09, "CX Lápis de cera", 12.00M, DataAtual);
-Venda venda9 = new Venda(10, "Borracha", 0.20M, DataAtual);
-Venda venda10 = new Venda(11, "Bloco de Notas", 10.00M, DataAtual);
-
-listaVendas.Add(venda);
-listaVendas.Add(venda1);
-listaVendas.Add(venda2);
-listaVendas.Add(venda3);
-listaVendas.Add(venda4);
-listaVendas.Add(venda5);
-listaVendas.Add(venda6);
-listaVendas.Add(venda7);
-listaVendas.Add(venda8);
-listaVendas.Add(venda9);
-listaVendas.Add(venda10);
 
 string basePath = AppDomain.CurrentDomain.BaseDirectory;
 string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
-string filePath = Path.Combine(projectPath, "Arquivos");
+string filePath = Path.Combine(projectPath, "Arquivos", "vendas.json");
+string conteudoArquivo = File.ReadAllText($"{filePath}");
 
-string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
-Console.WriteLine(serializado);
-File.WriteAllText($"{filePath}/vendas.json", serializado);
 
-string linkValidador = "https://codebeautify.org/jsonviewer";
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach (Venda venda in listaVenda)
+{
+    Console.WriteLine($"\nID: {venda.Id}, " +
+        $"\nProduto: {venda.Produto}, " +
+        $"\nPreço: {venda.Preco}, " +
+        $"\nData Venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}\n");
+}
+
+
+
+
+
+
+
+
+
+
+//DateTime DataAtual = DateTime.Now;
+
+//List<Venda> listaVendas = new List<Venda>();
+
+//Venda venda = new Venda(01,"Mesa",450.35M, DataAtual);
+//Venda venda1 = new Venda(02, "Caneta", 1.50M, DataAtual);
+//Venda venda2 = new Venda(03, "Carderno", 20.00M, DataAtual);
+//Venda venda3 = new Venda(04, "Lápis", 1.00M, DataAtual);
+//Venda venda4 = new Venda(5, "Lápis Grafite", 1.00M, DataAtual);
+//Venda venda5 = new Venda(06, "Lapiseira", 1.00M, DataAtual);
+//Venda venda6 = new Venda(07, "Estojo", 20.00M, DataAtual);
+//Venda venda7 = new Venda(08, "CX Lápis de Cor", 15.00M, DataAtual);
+//Venda venda8 = new Venda(09, "CX Lápis de cera", 12.00M, DataAtual);
+//Venda venda9 = new Venda(10, "Borracha", 0.20M, DataAtual);
+//Venda venda10 = new Venda(11, "Bloco de Notas", 10.00M, DataAtual);
+
+//listaVendas.Add(venda);
+//listaVendas.Add(venda1);
+//listaVendas.Add(venda2);
+//listaVendas.Add(venda3);
+//listaVendas.Add(venda4);
+//listaVendas.Add(venda5);
+//listaVendas.Add(venda6);
+//listaVendas.Add(venda7);
+//listaVendas.Add(venda8);
+//listaVendas.Add(venda9);
+//listaVendas.Add(venda10);
+
+//string basePath = AppDomain.CurrentDomain.BaseDirectory;
+//string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+//string filePath = Path.Combine(projectPath, "Arquivos");
+
+//string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+//Console.WriteLine(serializado);
+//File.WriteAllText($"{filePath}/vendas.json", serializado);
+
+//string linkValidador = "https://codebeautify.org/jsonviewer";
 
 
 //Console.WriteLine("Digite um número: ");
