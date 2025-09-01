@@ -23,10 +23,12 @@
 //                if (value == 0)
 //                {
 //                    throw new ArgumentException("Matrícula não pode ser vazia ou nula.");
-//                }else if (value < 0)
+//                }
+//                else if (value < 0)
 //                {
 //                    throw new ArgumentException("Matrícula não pode ser negativa.");
-//                } else
+//                }
+//                else
 //                    _matricula = value;
 //            }
 //        }

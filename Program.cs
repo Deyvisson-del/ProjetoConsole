@@ -8,21 +8,25 @@ using Microsoft.VisualBasic;
 
 
 
-string basePath = AppDomain.CurrentDomain.BaseDirectory;
-string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
-string filePath = Path.Combine(projectPath, "Arquivos", "vendas.json");
-string conteudoArquivo = File.ReadAllText($"{filePath}");
+Corrente c = new Corrente();
+c.Creditar(500);
+c.ExibirSlado();
+
+//string basePath = AppDomain.CurrentDomain.BaseDirectory;
+//string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+//string filePath = Path.Combine(projectPath, "Arquivos", "vendas.json");
+//string conteudoArquivo = File.ReadAllText($"{filePath}");
 
 
-List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+//List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
-foreach (Venda venda in listaVenda)
-{
-    Console.WriteLine($"\nID: {venda.Id}, " +
-        $"\nProduto: {venda.Produto}, " +
-        $"\nPreço: {venda.Preco}, " +
-        $"\nData Venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}\n");
-}
+//foreach (Venda venda in listaVenda)
+//{
+//    Console.WriteLine($"\nID: {venda.Id}, " +
+//        $"\nProduto: {venda.Produto}, " +
+//        $"\nPreço: {venda.Preco}, " +
+//        $"\nData Venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}\n");
+//}
 
 
 
