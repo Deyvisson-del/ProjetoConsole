@@ -5,12 +5,15 @@ using System;
 using System.IO;
 using Newtonsoft.Json;
 using Microsoft.VisualBasic;
+using ProjetoConsole.Models;
 
+namespace ProjetoConsole.Models
+{
+    Corrente c = new Corrente();
+    c.Creditar(500);
+    c.ExibirSlado();
 
-
-Corrente c = new Corrente();
-c.Creditar(500);
-c.ExibirSlado();
+}
 
 //string basePath = AppDomain.CurrentDomain.BaseDirectory;
 //string projectPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
