@@ -7,7 +7,7 @@ using ProjetoConsole.Models;
 
 namespace ProjetoConsole.Models
 {
-    public class Corrente : Conta
+    class Corrente : Conta
     {
         public override void Creditar(decimal valor)
         {

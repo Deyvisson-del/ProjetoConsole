@@ -5,15 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjetoConsole.Models;
 
-class test
-{
-    Console.WriteLine("teste bem sucessedido");
-}
-
 namespace ProjetoConsole.Models
 {
 
-    public abstract class Conta
+    abstract class Conta
     {
         protected decimal saldo;
 
