@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace ProjetoConsole.Models
 {
 
-    public abstract class Conta
+    public class Conta
     {
-        
         protected decimal saldo;
 
         public void ExibirSaldo()
