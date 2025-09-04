@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetoConsole.Models;
+
+class test
+{
+    Console.WriteLine("teste bem sucessedido");
+}
 
 namespace ProjetoConsole.Models
 {
 
-    public class Conta
+    public abstract class Conta
     {
         protected decimal saldo;
 

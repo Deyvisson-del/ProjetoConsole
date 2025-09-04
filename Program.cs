@@ -9,6 +9,7 @@ using ProjetoConsole.Models;
 
 namespace ProjetoConsole.Models
 {
+    Console.WriteLine("Teste de mesa");
     Corrente c = new Corrente();
     c.Creditar(500);
     c.ExibirSlado();
